@@ -20,16 +20,23 @@ Battletag = BattletagName + "#" + BattleTagNumber
 There are no required query string parameters when accessing this resource.
 
 *An example Career Profile API request:*
-> GET /api/d3/account/Straton-1<br/>
-> Host: us.battle.net
+
+```plain
+GET /api/d3/account/Straton-1
+Host: us.battle.net
+```
 
 *An example Career Profile API response:*
-> HTTP/1.1 200 OK<br/>
-> &lt;http headers&gt;
-> 
-> {"heroes": [{"name": "Yharr", "id": 1, ...}, ...], ...}
+```plain
+HTTP/1.1 200 OK
+&lt;http headers&gt;
+
+{"heroes": [{"name": "Yharr", "id": 1, ...}, ...], ...}
+```
 
 The core dataset returned includes a list of the account's heroes and artisans, a summary of time played by class, progression information and a list of the account's fallen heroes.
+
+## Career Profile Example
 
 ```json
 {
