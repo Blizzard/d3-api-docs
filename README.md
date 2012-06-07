@@ -1,10 +1,14 @@
-﻿**This site has been generated with DocumentUp**
+﻿# Diablo 3 Web API
+
+This is the documentation for the Diablo 3 API resources that are a part of the Blizzard Community Platform API. ***The Diablo 3 API resources are not publicly available***, but we are providing this documentation to prepare developers and fan sites as best we can for its release.
+
+## Overview
 
 The Blizzard Community Platform API provides a number of resources for developers and Diablo 3 enthusiasts to gather data about their accounts and heroes. This documentation is primarily for developers and third parties.
 
 Blizzard's epic gaming experiences often take place in game, but can lead to rewarding and lasting experiences out of game as well. Through exposing key sets of data, we can enable the community to create extended communities to continue that epic experience.
 
-# Career Profile
+## Career Profile
 
 The Career Profile API is the primary way to access account level career profile  information. This Career Profile API can be used to fetch a single game account at a time through a HTTP GET request to a URL describing the career profile resource.
 
@@ -34,7 +38,7 @@ HTTP/1.1 200 OK
 
 The core dataset returned includes a list of the account's heroes and artisans, a summary of time played by class, progression information and a list of the account's fallen heroes.
 
-## Career Profile Example
+### Career Profile Example
 
 ```json
 {
