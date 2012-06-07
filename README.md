@@ -4,9 +4,7 @@ The Blizzard Community Platform API provides a number of resources for developer
 
 Blizzard's epic gaming experiences often take place in game, but can lead to rewarding and lasting experiences out of game as well. Through exposing key sets of data, we can enable the community to create extended communities to continue that epic experience.
 
-# API Resources
-
-## Career Profile
+# Career Profile
 
 The Career Profile API is the primary way to access account level career profile  information. This Career Profile API can be used to fetch a single game account at a time through a HTTP GET request to a URL describing the career profile resource.
 
@@ -20,16 +18,23 @@ Battletag = BattletagName + "#" + BattleTagNumber
 There are no required query string parameters when accessing this resource.
 
 *An example Career Profile API request:*
-> GET /api/d3/account/Straton-1<br/>
-> Host: us.battle.net
+
+```plain
+GET /api/d3/account/Straton-1
+Host: us.battle.net
+```
 
 *An example Career Profile API response:*
-> HTTP/1.1 200 OK<br/>
-> &lt;http headers&gt;
-> 
-> {"heroes": [{"name": "Yharr", "id": 1, ...}, ...], ...}
+```plain
+HTTP/1.1 200 OK
+&lt;http headers&gt;
+
+{"heroes": [{"name": "Yharr", "id": 1, ...}, ...], ...}
+```
 
 The core dataset returned includes a list of the account's heroes and artisans, a summary of time played by class, progression information and a list of the account's fallen heroes.
+
+## Career Profile Example
 
 ```json
 {
