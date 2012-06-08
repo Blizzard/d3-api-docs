@@ -270,7 +270,7 @@ The core dataset returned includes several key hero elements (name, level class,
 
 ### Hero Profile Example
 
-```json
+```
 {
     "id": 1,
     "name": "Yharr",
