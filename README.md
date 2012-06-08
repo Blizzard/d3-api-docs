@@ -1475,7 +1475,7 @@ The Hero Profile API is the primary way to access hero profile  information. Thi
 By default, a basic dataset will be returned and with each request and zero or more additional fields can be retrieved. To access this API, craft a resource URL pointing to the hero of an account whos information is to be retrieved.
 
 ```plain
-URL = Host + "/api/d3/hero/" + BattletagName + "-" + BattletagNumber + "/" + HeroId
+URL = Host + "/api/d3/account/" + BattletagName + "-" + BattletagNumber + "/hero/" + HeroId
 ```
 
 There are no required query string parameters when accessing this resource.
