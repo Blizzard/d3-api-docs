@@ -1502,7 +1502,7 @@ The core dataset returned includes several key hero elements (name, level class,
 
 ```json
 {
-    "id": 182,
+    "id": 1,
     "name": "Yharr",
     "class": "barbarian",
     "gender": 0,
