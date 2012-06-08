@@ -31,7 +31,7 @@ Host: us.battle.net
 *An example Career Profile API response:*
 ```plain
 HTTP/1.1 200 OK
-&lt;http headers&gt;
+<http headers>
 
 {"heroes": [{"name": "Yharr", "id": 1, ...}, ...], ...}
 ```
