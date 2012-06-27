@@ -1,0 +1,41 @@
+{
+   "name":"Gambler's Loop",
+   "icon":"ring_10",
+   "displayColor":"yellow",
+   "tooltipParams":"item-data/CNT-vN0DEgcIBBUQVV1EHYutUmgdRH0C5R0-vYo1HRjTLBAdjrDM0B0WpNPYIgsIABW2_gEAGCQgCDAJOKwDQABQEGCsA2okCgwIABCk2tSagICA4CASFAjysbA9EgcIBBVF9YtfMAk4AEAB",
+   "bonusAffixes":0,
+   "requiredLevel":25,
+   "socketEffects":[
+
+   ],
+   "salvage":[
+      {
+         "chance":1,
+         "item":{
+            "name":"Subtle Essence",
+            "icon":"crafting_tier_01b",
+            "displayColor":"blue",
+            "tooltipParams":"item/subtle-essence"
+         },
+         "quantity":1
+      },
+      {
+         "chance":1,
+         "item":{
+            "name":"Fallen Tooth",
+            "icon":"crafting_tier_01c",
+            "displayColor":"yellow",
+            "tooltipParams":"item/fallen-tooth"
+         },
+         "quantity":1
+      }
+   ],
+   "itemLevel":28,
+   "attributes":[
+      "+48 Damage",
+      "+5 Intelligence",
+      "Regenerates 2 Life per Second",
+      "7% Better Chance of Finding Magical Items",
+      "Critical Hit Chance Increased by 1.0%"
+   ]
+}

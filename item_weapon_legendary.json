@@ -1,0 +1,47 @@
+{
+   "name":"Skywarden",
+   "icon":"unique_mace_2h_010",
+   "displayColor":"orange",
+   "tooltipParams":"item-data/CPjT4eQLEgcIBBX1otksHZuwzNAdPoRWVB2xIBV7HTeqe1AdSmNPMDAJOLwDQABQEmC8Aw",
+   "bonusAffixes":0,
+   "requiredLevel":41,
+   "socketEffects":[
+
+   ],
+   "flavorText":"Favored weapon of the angelic Host.",
+   "salvage":[
+      {
+         "chance":1,
+         "item":{
+            "name":"Lizard Eye",
+            "icon":"crafting_tier_02c",
+            "displayColor":"yellow",
+            "tooltipParams":"item/lizard-eye"
+         },
+         "quantity":3
+      }
+   ],
+   "itemLevel":43,
+   "attributes":[
+      "+1129 Holy Damage",
+      "+90 Intelligence",
+      "Increases Attack Speed by 3%",
+      "10.6% chance to inflict Bleed for 2943 damage over 5 seconds."
+   ],
+   "minDamage":{
+      "min":106,
+      "max":106
+   },
+   "maxDamage":{
+      "min":113,
+      "max":113
+   },
+   "dps":{
+      "min":120.04649681985379,
+      "max":120.04649681985379
+   },
+   "attacksPerSecond":{
+      "min":0.9269999754428864,
+      "max":0.9269999754428864
+   }
+}

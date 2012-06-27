@@ -1,0 +1,39 @@
+{
+   "name":"Steadfast Root of Mutilation",
+   "icon":"enchantress_special_104",
+   "displayColor":"blue",
+   "tooltipParams":"item-data/CMWEkoMLEgcIBBXynmItHQVEX6AdInwGyDAJOABAAFAI",
+   "bonusAffixes":0,
+   "requiredLevel":46,
+   "socketEffects":[
+
+   ],
+   "salvage":[
+      {
+         "chance":1,
+         "item":{
+            "name":"Shimmering Essence",
+            "icon":"crafting_tier_02b",
+            "displayColor":"blue",
+            "tooltipParams":"item/shimmering-essence"
+         },
+         "quantity":1
+      },
+      {
+         "chance":0.15,
+         "item":{
+            "name":"Lizard Eye",
+            "icon":"crafting_tier_02c",
+            "displayColor":"yellow",
+            "tooltipParams":"item/lizard-eye"
+         },
+         "quantity":1
+      }
+   ],
+   "itemLevel":48,
+   "attributes":[
+      "+42 Dexterity",
+      "+46 Intelligence",
+      "+250 Life after Each Kill"
+   ]
+}
