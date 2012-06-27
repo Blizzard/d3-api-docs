@@ -12,7 +12,7 @@ Blizzard's epic gaming experiences often take place in game, but can lead to rew
 
 The Career Profile API is the primary way to access account level career profile  information. This Career Profile API can be used to fetch a single game account at a time through a HTTP GET request to a URL describing the career profile resource.
 
-By default, a basic dataset will be returned and with each request and zero or more additional fields can be retrieved. To access this API, craft a resource URL pointing to the battletag of an account whos information is to be retrieved.
+By default, a basic dataset will be returned and with each request and zero or more additional fields can be retrieved. To access this API, craft a resource URL pointing to the battletag of an account whose information is to be retrieved.
 
 ```plain
 battletag-name ::= <regional battletag allowed characters>
@@ -244,7 +244,7 @@ The core dataset returned includes a list of the account's heroes and artisans, 
 
 The Hero Profile API is the primary way to access hero profile  information. This Hero Profile API can be used to fetch a single hero at a time through a HTTP GET request to a URL describing the hero profile resource.
 
-By default, a basic dataset will be returned and with each request and zero or more additional fields can be retrieved. To access this API, craft a resource URL pointing to the hero of an account whos information is to be retrieved.
+By default, a basic dataset will be returned and with each request and zero or more additional fields can be retrieved. To access this API, craft a resource URL pointing to the hero of an account whose information is to be retrieved.
 
 ```plain
 battletag-name ::= <regional battletag allowed characters>
