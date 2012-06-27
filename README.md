@@ -1,4 +1,4 @@
-﻿# Diablo 3 Web API
+# Diablo 3 Web API
 
 This is the documentation for the Diablo 3 API resources that are a part of the Blizzard Community Platform API. ***The Diablo 3 API resources are not publicly available***, but we are providing this documentation to prepare developers and fan sites as best we can for its release.
 
@@ -1696,5 +1696,139 @@ The core dataset returned includes several key hero elements (name, level class,
         "elites": 1064
     },
     "last-updated": 1339069947
+}
+```
+
+## Item Information
+
+The Item API is the primary way to access detailed item information. It can be used to fetch a single item ata a time through a HTTP GET request to a URL describing the item resource.
+
+By default, a basic dataset will be returned and with each request and zero or more additional fields can be retrieved. To access this API, craft a resource URL pointing to the hero of an account whos information is to be retrieved.
+
+```plain
+URL = Host + "/api/d3/data/item/" + ItemData
+```
+
+There are no required query string parameters when accessing this resource.
+
+*An example Item API request:*
+
+```plain
+GET /api/d3/data/item/COGHsoAIEgcIBBXIGEoRHYQRdRUdnWyzFB2qXu51MA04kwNAAFAKYJMD
+Host: us.battle.net
+```
+
+*An example Career Profile API response:*
+```plain
+HTTP/1.1 200 OK
+<http headers>
+
+{ "name": "Exsanguinating Chopsword of Assault", "icon": "mightyweapon1h_202", "displayColor": "blue", "requiredLevel": 60, "itemLevel": 61, "bonusAffixes": 0, ... }
+
+```
+
+The data associated with an item object varies from item to item, but in most cases you will be able to retreive the name, icon, display color, required level, item level, bonus affixes, attributes and salvage information.
+
+### Item Information Example
+
+```
+{
+   "name":"Exsanguinating Chopsword of Assault",
+   "icon":"mightyweapon1h_202",
+   "displayColor":"blue",
+   "tooltipParams":"item-data/COGHsoAIEgcIBBXIGEoRHYQRdRUdnWyzFB2qXu51MA04kwNAAFAKYJMD",
+   "requiredLevel":60,
+   "itemLevel":61,
+   "bonusAffixes":0,
+   "dps":{
+      "min":206.69999241828918,
+      "max":206.69999241828918
+   },
+   "attacksPerSecond":{
+      "min":1.2999999523162842,
+      "max":1.2999999523162842
+   },
+   "minDamage":{
+      "min":112,
+      "max":112
+   },
+   "maxDamage":{
+      "min":206,
+      "max":206
+   },
+   "attributes":[
+      "+211 Strength",
+      "+112 Vitality",
+      "2.80% of Damage Dealt Is Converted to Life"
+   ],
+   "attributesRaw":{
+      "Attacks_Per_Second_Item":{
+         "min":1.2999999523162842,
+         "max":1.2999999523162842
+      },
+      "Damage_Weapon_Min#Physical":{
+         "min":112,
+         "max":112
+      },
+      "Damage_Weapon_Delta#Physical":{
+         "min":94,
+         "max":94
+      },
+      "Strength_Item":{
+         "min":211,
+         "max":211
+      },
+      "Durability_Cur":{
+         "min":403,
+         "max":403
+      },
+      "Durability_Max":{
+         "min":403,
+         "max":403
+      },
+      "Steal_Health_Percent":{
+         "min":0.028,
+         "max":0.028
+      },
+      "Vitality_Item":{
+         "min":112,
+         "max":112
+      }
+   },
+   "socketEffects":[
+
+   ],
+   "salvage":[
+      {
+         "chance":1,
+         "item":{
+            "name":"Exquisite Essence",
+            "icon":"crafting_tier_04b",
+            "displayColor":"blue",
+            "tooltipParams":"item/exquisite-essence"
+         },
+         "quantity":1
+      },
+      {
+         "chance":0.14984228,
+         "item":{
+            "name":"Iridescent Tear",
+            "icon":"crafting_tier_04c",
+            "displayColor":"yellow",
+            "tooltipParams":"item/iridescent-tear"
+         },
+         "quantity":1
+      },
+      {
+         "chance":0.0001577287,
+         "item":{
+            "name":"Fiery Brimstone",
+            "icon":"crafting_tier_04d",
+            "displayColor":"orange",
+            "tooltipParams":"item/fiery-brimstone"
+         },
+         "quantity":1
+      }
+   ]
 }
 ```
