@@ -15,7 +15,9 @@ The Career Profile API is the primary way to access account level career profile
 By default, a basic dataset will be returned and with each request and zero or more additional fields can be retrieved. To access this API, craft a resource URL pointing to the battletag of an account whos information is to be retrieved.
 
 ```plain
-URL = Host + "/api/d3/account/" + BattletagName + "-" + BattletagNumber
+battletag-name ::= <regional battletag allowed characters>
+battletag-code ::= <integer>
+url ::= <host> "/api/d3/account/" <battletag-name> "-" <battletag-code>
 ```
 
 There are no required query string parameters when accessing this resource.
@@ -245,7 +247,10 @@ The Hero Profile API is the primary way to access hero profile  information. Thi
 By default, a basic dataset will be returned and with each request and zero or more additional fields can be retrieved. To access this API, craft a resource URL pointing to the hero of an account whos information is to be retrieved.
 
 ```plain
-URL = Host + "/api/d3/account/" + BattletagName + "-" + BattletagNumber + "/hero/" + HeroId
+battletag-name ::= <regional battletag allowed characters>
+battletag-code ::= <integer>
+hero-id ::= <integer>
+url ::= <host> "/api/d3/account/" <battletag-name> "-" <battletag-code> "/hero/" <hero-id>
 ```
 
 There are no required query string parameters when accessing this resource.
@@ -1701,12 +1706,10 @@ The core dataset returned includes several key hero elements (name, level class,
 
 ## Item Information
 
-The Item API is the primary way to access detailed item information. It can be used to fetch a single item ata a time through a HTTP GET request to a URL describing the item resource.
-
-By default, a basic dataset will be returned and with each request and zero or more additional fields can be retrieved. To access this API, craft a resource URL pointing to the hero of an account whos information is to be retrieved.
+The Item API is the primary way to access detailed item information. It can be used to fetch a single item at a time through a HTTP GET request to a URL describing the item resource.
 
 ```plain
-URL = Host + "/api/d3/data/item/" + ItemData
+url ::= <host> "/api/d3/data/item/" <item-data>
 ```
 
 There are no required query string parameters when accessing this resource.
@@ -1832,3 +1835,76 @@ The data associated with an item object varies from item to item, but in most ca
    ]
 }
 ```
+
+Additional file examples may be found as the following d3-api-docs repository files:
+
+* item_magic_enchantress_special.json
+* item_magic_helm.json
+* item_rare_pants.json
+* item_rare_ring.json
+* item_weapon_legendary.json
+
+## Follower Information
+
+The Follwer API is the primary way to access detailed follower information. It can be used to fetch a single follower at a time through a HTTP GET request to a URL describing the follower resource.
+
+```plain
+follower-type ::= "enchantress" | "templar" | "scoundrel"
+url ::= <host> "/api/d3/data/follower/" < follower-type>
+```
+
+There are no required query string parameters when accessing this resource.
+
+*An example Follower API request:*
+
+```plain
+GET /api/d3/data/follower/scoundrel
+Host: us.battle.net
+```
+
+*An example Follower API response:*
+```plain
+HTTP/1.1 200 OK
+<http headers>
+
+{ "slug": "scoundrel", "name": "Scoundrel", "portrait": "scoundrel", "skills": { "active": [ { "slug": "crippling-shot", "name": "Crippling Shot", ...}, ...], ... }, ... }
+
+```
+
+The data provided by this resource includes the follower's name, slug, portrait and available skills.
+
+### Follower Information Example
+
+Please refer to the `follower_scoundrel.json` file for a detailed Follower API resource response example.
+
+## Artisan Information
+
+The Artisan API is the primary way to access detailed artisan information. It can be used to fetch a single artisan at a time through a HTTP GET request to a URL describing the artisan resource.
+
+```plain
+artisan ::= "blacksmith" | "jeweler"
+url ::= <host> "/api/d3/data/artisan/" < follower-type>
+```
+
+There are no required query string parameters when accessing this resource.
+
+*An example Artisan API request:*
+
+```plain
+GET /api/d3/data/artisan/blacksmith
+Host: us.battle.net
+```
+
+*An example Artisan API response:*
+```plain
+HTTP/1.1 200 OK
+<http headers>
+
+{ "slug": "blacksmith", "name": "d3.artisan.blacksmith", "portrait": "pt_blacksmith", "training": { "tiers": [ { "tier": 1, "levels": [ {} , ... ] }, ... ], ... }, ... }
+```
+
+The data provided by this resource includes the artisan's name, slug, portrait and tier information.
+
+### Artisan Information Example
+
+Please refer to the `artisan_blacksmith.json` file for a detailed Artisan API resource response example. **Warning, that file is large.**

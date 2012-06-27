@@ -1,0 +1,92 @@
+{
+   "slug":"scoundrel",
+   "name":"Scoundrel",
+   "portrait":"scoundrel",
+   "skills":{
+      "active":[
+         {
+            "slug":"crippling-shot",
+            "name":"Crippling Shot",
+            "icon":"scoundrel_cripplingshot",
+            "level":5,
+            "tooltipUrl":"skill/scoundrel/crippling-shot",
+            "description":"Ranged attack that slows the target by 60% for 3 seconds.\r\n\r\nCooldown: 6 seconds",
+            "simpleDescription":"Deals damage and slows the target.",
+            "skillCalcId":"a"
+         },
+         {
+            "slug":"poison-bolts",
+            "name":"Poison Bolts",
+            "icon":"scoundrel_poisonarrow",
+            "level":5,
+            "tooltipUrl":"skill/scoundrel/poison-bolts",
+            "description":"Ranged attack which deals 40% weapon damage and an additional 40% weapon damage as Poison over 3 seconds.\r\n\r\nCooldown: 6 seconds",
+            "simpleDescription":"Shoots a deadly poisoned bolt.",
+            "skillCalcId":"Z"
+         },
+         {
+            "slug":"dirty-fighting",
+            "name":"Dirty Fighting",
+            "icon":"scoundrel_dirtyfighting",
+            "level":10,
+            "tooltipUrl":"skill/scoundrel/dirty-fighting",
+            "description":"Blinds enemies in front of the Scoundrel for 3 seconds.\r\n\r\nCooldown: 30 seconds",
+            "simpleDescription":"Blinds nearby enemies.",
+            "skillCalcId":"b"
+         },
+         {
+            "slug":"vanish",
+            "name":"Vanish",
+            "icon":"scoundrel_vanish",
+            "level":10,
+            "tooltipUrl":"skill/scoundrel/vanish",
+            "description":"The Scoundrel vanishes in a cloud of smoke when injured, reappearing after 5 seconds. While vanished, he will heal himself for 15505 Life.\r\n\r\nCooldown: 30 seconds",
+            "simpleDescription":"The Scoundrel temporarily vanishes when in danger.",
+            "skillCalcId":"Y"
+         },
+         {
+            "slug":"powered-shot",
+            "name":"Powered Shot",
+            "icon":"scoundrel_powershot",
+            "level":15,
+            "tooltipUrl":"skill/scoundrel/powered-shot",
+            "description":"Powerful ranged attack that explodes on impact, dealing 25% weapon damage as Arcane to targets within 6 yards and has a 50% chance to Stun targets for 2 seconds.\r\n\r\nCooldown: 20 seconds",
+            "simpleDescription":"Deals massive damage in an area and knocks back enemies.",
+            "skillCalcId":"c"
+         },
+         {
+            "slug":"multishot",
+            "name":"Multishot",
+            "icon":"scoundrel_multishot",
+            "level":15,
+            "tooltipUrl":"skill/scoundrel/multishot",
+            "description":"The Scoundrel's ranged attacks fire 3 bolts at a time.",
+            "simpleDescription":"The Scoundrel's attacks shoot multiple bolts.",
+            "skillCalcId":"X"
+         },
+         {
+            "slug":"hysteria",
+            "name":"Hysteria",
+            "icon":"scoundrel_hysteria",
+            "level":20,
+            "tooltipUrl":"skill/scoundrel/hysteria",
+            "description":"Whenever you or the Scoundrel land a Critical Hit, you both will go into hysterics, increasing all damage done by 10% for 3 seconds. This effect cannot occur more than once every 6 seconds.",
+            "simpleDescription":"Critical Hits cause you and the Scoundrel to temporarily deal more damage.",
+            "skillCalcId":"d"
+         },
+         {
+            "slug":"anatomy",
+            "name":"Anatomy",
+            "icon":"scoundrel_anatomy",
+            "level":20,
+            "tooltipUrl":"skill/scoundrel/anatomy",
+            "description":"Increases Critical Hit Chance by 3% for the Scoundrel and his allies.",
+            "simpleDescription":"Increases the Critical Hit Chance of the Scoundrel and his allies.",
+            "skillCalcId":"W"
+         }
+      ],
+      "passive":[
+
+      ]
+   }
+}
