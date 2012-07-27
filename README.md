@@ -1,18 +1,18 @@
 # Diablo 3 Web API
 
-This is the documentation for the Diablo 3 API resources that are a part of the Blizzard Community Platform API. ***The Diablo 3 API resources are not publicly available***, but we are providing this documentation to prepare developers and fan sites as best we can for its release.
+This article documents the Diablo 3 API resources that are in the Blizzard Community Platform API. ***The Diablo 3 API resources are not publicly available***. This document prepares developers and fan sites for Diablo 3's release.
 
 ## Overview
 
-The Blizzard Community Platform API provides a number of resources for developers and Diablo 3 enthusiasts to gather data about their accounts and heroes. This documentation is primarily for developers and third parties.
+The Blizzard Community Platform API provides a number of resources for developers, third parties, and Diablo 3 enthusiasts to gather data about their accounts and heroes.
 
-Blizzard's epic gaming experiences often take place in game, but can lead to rewarding and lasting experiences out of game as well. Through exposing key sets of data, we can enable the community to create extended communities to continue that epic experience.
+Blizzard's epic gaming experiences often take place in-game, but can lead to rewarding and lasting experiences out of game as well. By exposing key sets of data, the community can create extended communities to continue the epic experience.
 
 ## Career Profile
 
-The Career Profile API is the primary way to access account level career profile  information. This Career Profile API can be used to fetch a single game account at a time through a HTTP GET request to a URL describing the career profile resource.
+Access account-level career profile information through the Career Profile API. Use this API to fetch a single game account at a time through an HTTP GET request to a URL describing the career profile resource.
 
-By default, a basic dataset will be returned and with each request and zero or more additional fields can be retrieved. To access this API, craft a resource URL pointing to the battletag of an account whose information is to be retrieved.
+By default, it returns a basic dataset,and with each request of zero or more additional fields can be retrieved. Access this API by crafting a resource URL pointing to the battletag of an account whose information is to be retrieved.
 
 ```plain
 battletag-name ::= <regional battletag allowed characters>
@@ -20,16 +20,16 @@ battletag-code ::= <integer>
 url ::= <host> "/api/d3/account/" <battletag-name> "-" <battletag-code>
 ```
 
-There are no required query string parameters when accessing this resource.
+Query string parameters are optional when accessing this resource.
 
-*An example Career Profile API request:*
+*Career Profile API Request Example:*
 
 ```plain
 GET /api/d3/account/Straton-1
 Host: us.battle.net
 ```
 
-*An example Career Profile API response:*
+*Sample Career Profile API Response Example:*
 ```plain
 HTTP/1.1 200 OK
 <http headers>
@@ -37,7 +37,7 @@ HTTP/1.1 200 OK
 {"heroes": [{"name": "Yharr", "id": 1, ...}, ...], ...}
 ```
 
-The core dataset returned includes a list of the account's heroes and artisans, a summary of time played by class, progression information and a list of the account's fallen heroes.
+The returned core dataset includes a list of the account's heroes and artisans, a summary of time played by class, progression information, and a list of the account's fallen heroes.
 
 ### Career Profile Example
 
@@ -242,9 +242,9 @@ The core dataset returned includes a list of the account's heroes and artisans, 
 
 ## Hero Profile
 
-The Hero Profile API is the primary way to access hero profile  information. This Hero Profile API can be used to fetch a single hero at a time through a HTTP GET request to a URL describing the hero profile resource.
+Access hero profile information through the Hero Profile API. Use this Hero Profile API to fetch a single hero at a time through an HTTP GET request to a URL describing the hero profile resource.
 
-By default, a basic dataset will be returned and with each request and zero or more additional fields can be retrieved. To access this API, craft a resource URL pointing to the hero of an account whose information is to be retrieved.
+By default, a basic dataset will be returned and with each request and zero or more additional fields can be retrieved. Access this API by crafting a resource URL pointing to the battletag of an account whose information is to be retrieved.
 
 ```plain
 battletag-name ::= <regional battletag allowed characters>
@@ -255,14 +255,14 @@ url ::= <host> "/api/d3/account/" <battletag-name> "-" <battletag-code> "/hero/"
 
 There are no required query string parameters when accessing this resource.
 
-*An example Career Profile API request:*
+*Hero Profile API Request Example:*
 
 ```plain
 GET /api/d3/account/Straton-1/hero/1
 Host: us.battle.net
 ```
 
-*An example Career Profile API response:*
+*Career Profile API Response Example:*
 ```plain
 HTTP/1.1 200 OK
 <http headers>
@@ -271,7 +271,7 @@ HTTP/1.1 200 OK
 
 ```
 
-The core dataset returned includes several key hero elements (name, level class, gender, hardcore flag, etc) as well as skills (both active and passive), equipped items, follower information (including items and skills), statis (attributes, resistances, etc) and progress.
+The core dataset returned includes key hero elements (name, level class, gender, hardcore flag, etc.), skills (both active and passive), equipped items, follower information (items and skills), stats (attributes, resistances, etc.) and progress.
 
 ### Hero Profile Example
 
@@ -1706,22 +1706,22 @@ The core dataset returned includes several key hero elements (name, level class,
 
 ## Item Information
 
-The Item API is the primary way to access detailed item information. It can be used to fetch a single item at a time through a HTTP GET request to a URL describing the item resource.
+Access detailed item information through the Item API. Use it to fetch a single item at a time through an HTTP GET request to a URL describing the item resource.
 
 ```plain
 url ::= <host> "/api/d3/data/item/" <item-data>
 ```
 
-There are no required query string parameters when accessing this resource.
+Query string parameters are optional when accessing this resource.
 
-*An example Item API request:*
+*Item API Request Example:*
 
 ```plain
 GET /api/d3/data/item/COGHsoAIEgcIBBXIGEoRHYQRdRUdnWyzFB2qXu51MA04kwNAAFAKYJMD
 Host: us.battle.net
 ```
 
-*An example Career Profile API response:*
+*Career Profile API Response:*
 ```plain
 HTTP/1.1 200 OK
 <http headers>
@@ -1730,7 +1730,7 @@ HTTP/1.1 200 OK
 
 ```
 
-The data associated with an item object varies from item to item, but in most cases you will be able to retreive the name, icon, display color, required level, item level, bonus affixes, attributes and salvage information.
+The data associated with an item object varies between items, but in most cases you can retreive the name, icon, display color, required level, item level, bonus affixes, attributes and salvage information.
 
 ### Item Information Example
 
@@ -1836,7 +1836,7 @@ The data associated with an item object varies from item to item, but in most ca
 }
 ```
 
-Additional file examples may be found as the following d3-api-docs repository files:
+Additional file examples may be found in these d3-api-docs repository files:
 
 * item_magic_enchantress_special.json
 * item_magic_helm.json
@@ -1846,23 +1846,23 @@ Additional file examples may be found as the following d3-api-docs repository fi
 
 ## Follower Information
 
-The Follwer API is the primary way to access detailed follower information. It can be used to fetch a single follower at a time through a HTTP GET request to a URL describing the follower resource.
+Access detailed follower information through the Follower. Use it to fetch a single follower at a time through an HTTP GET request to a URL describing the follower resource.
 
 ```plain
 follower-type ::= "enchantress" | "templar" | "scoundrel"
 url ::= <host> "/api/d3/data/follower/" < follower-type>
 ```
 
-There are no required query string parameters when accessing this resource.
+Query string parameters are optional when accessing this resource.
 
-*An example Follower API request:*
+*Follower API Request Example:*
 
 ```plain
 GET /api/d3/data/follower/scoundrel
 Host: us.battle.net
 ```
 
-*An example Follower API response:*
+*Follower API Response Example:*
 ```plain
 HTTP/1.1 200 OK
 <http headers>
@@ -1875,18 +1875,18 @@ The data provided by this resource includes the follower's name, slug, portrait 
 
 ### Follower Information Example
 
-Please refer to the `follower_scoundrel.json` file for a detailed Follower API resource response example.
+Refer to the `follower_scoundrel.json` file for a detailed Follower API resource response example.
 
 ## Artisan Information
 
-The Artisan API is the primary way to access detailed artisan information. It can be used to fetch a single artisan at a time through a HTTP GET request to a URL describing the artisan resource.
+Access detailed artison information through the Artisan API. Use it to fetch a single artisan at a time through an HTTP GET request to a URL describing the artisan resource.
 
 ```plain
 artisan ::= "blacksmith" | "jeweler"
 url ::= <host> "/api/d3/data/artisan/" < follower-type>
 ```
 
-There are no required query string parameters when accessing this resource.
+Query string parameters are optional when accessing this resource.
 
 *An example Artisan API request:*
 
@@ -1907,4 +1907,5 @@ The data provided by this resource includes the artisan's name, slug, portrait a
 
 ### Artisan Information Example
 
-Please refer to the `artisan_blacksmith.json` file for a detailed Artisan API resource response example. **Warning, that file is large.**
+Refer to the `artisan_blacksmith.json` file for a detailed Artisan API resource response example. 
+**Note: `artisan_blacksmith.json` is a large file.**
