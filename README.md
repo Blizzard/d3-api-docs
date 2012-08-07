@@ -275,7 +275,7 @@ The core dataset returned includes key hero elements (name, level class, gender,
 
 ### Hero Profile Example
 
-```
+```json
 {
     "id": 1,
     "name": "Yharr",
@@ -1734,7 +1734,7 @@ The data associated with an item object varies between items, but in most cases 
 
 ### Item Information Example
 
-```
+```json
 {
    "name":"Exsanguinating Chopsword of Assault",
    "icon":"mightyweapon1h_202",
