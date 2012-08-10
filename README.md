@@ -1,6 +1,6 @@
 # Diablo 3 Web API
 
-This article documents the Diablo 3 API resources that are in the Blizzard Community Platform API. ***The Diablo 3 API resources are not publicly available***. This document prepares developers and fan sites for Diablo 3's release.
+This article documents the Diablo 3 API resources that are in the Blizzard Community Platform API.
 
 ## Overview
 
@@ -17,7 +17,7 @@ By default, it returns a basic dataset,and with each request of zero or more add
 ```plain
 battletag-name ::= <regional battletag allowed characters>
 battletag-code ::= <integer>
-url ::= <host> "/api/d3/account/" <battletag-name> "-" <battletag-code>
+url ::= <host> "/api/d3/profile/" <battletag-name> "-" <battletag-code> "/"
 ```
 
 Query string parameters are optional when accessing this resource.
@@ -25,7 +25,7 @@ Query string parameters are optional when accessing this resource.
 *Career Profile API Request Example:*
 
 ```plain
-GET /api/d3/account/Straton-1
+GET /api/d3/profile/Straton-1/
 Host: us.battle.net
 ```
 
@@ -250,7 +250,7 @@ By default, a basic dataset will be returned and with each request and zero or m
 battletag-name ::= <regional battletag allowed characters>
 battletag-code ::= <integer>
 hero-id ::= <integer>
-url ::= <host> "/api/d3/account/" <battletag-name> "-" <battletag-code> "/hero/" <hero-id>
+url ::= <host> "/api/d3/profile/" <battletag-name> "-" <battletag-code> "/hero/" <hero-id>
 ```
 
 There are no required query string parameters when accessing this resource.
@@ -258,7 +258,7 @@ There are no required query string parameters when accessing this resource.
 *Hero Profile API Request Example:*
 
 ```plain
-GET /api/d3/account/Straton-1/hero/1
+GET /api/d3/profile/Straton-1/hero/1
 Host: us.battle.net
 ```
 
