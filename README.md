@@ -43,200 +43,773 @@ The returned core dataset includes a list of the account's heroes and artisans, 
 
 ```json
 {
-    "heroes": [
-        {
-            "name": "Dirt",
-            "id": 4,
-            "level": 3,
-            "gender": 0,
-            "class": "demon-hunter",
-            "hardcore": true,
-            "last-updated": 1338522850
-        },
-        {
-            "name": "Korale",
-            "id": 2,
-            "level": 8,
-            "gender": 0,
-            "class": "wizard",
-            "hardcore": false,
-            "last-updated": 1338204685
-        },
-        {
-            "name": "Worm",
-            "id": 3,
-            "level": 17,
-            "gender": 0,
-            "class": "witch-doctor",
-            "hardcore": true,
-            "last-updated": 1338638453
-        },
-        {
-            "name": "Yharr",
-            "id": 1,
-            "level": 54,
-            "gender": 0,
-            "class": "barbarian",
-            "hardcore": false,
-            "last-updated": 1338984440
-        }
-    ],
-    "last-hero-played": 1,
-    "last-updated": 1339045440,
-    "artisans": [
-        {
-            "slug": "blacksmith",
-            "level": 6,
-            "step-current": 4,
-            "step-max": 5
-        },
-        {
-            "slug": "jeweler",
-            "level": 5,
-            "step-current": 0,
-            "step-max": 1
-        }
-    ],
-    "hardcore-artisans": [
-        {
-            "slug": "blacksmith",
-            "level": 2,
-            "step-current": 2,
-            "step-max": 5
-        },
-        {
-            "slug": "jeweler",
-            "level": 0,
-            "step-current": 0,
-            "step-max": 1
-        }
-    ],
-    "kills": {
-        "monsters": 22119,
-        "elites": 1248,
-        "hardcoreMonsters": 2602
-    },
-    "time-played": {
-        "barbarian": 1,
-        "demon-hunter": 0.028,
-        "monk": 0.267,
-        "witch-doctor": 0.572,
-        "wizard": 0.133
-    },
-    "progression": [
-        {
-            "act": 1,
-            "difficulty": "nightmare"
-        },
-        {
-            "act": 2,
-            "difficulty": "nightmare"
-        },
-        {
-            "act": 3,
-            "difficulty": "nightmare"
-        },
-        {
-            "act": 4,
-            "difficulty": "nightmare"
-        }
-    ],
-    "fallen-heroes": [
-        {
-            "name": "Cook",
-            "heroId": 5,
-            "level": 10,
-            "items": {
-                "head": {
-                    "name": "Adventuring Leather Hood of the Bear",
-                    "icon": "helm_002",
-                    "displayColor": "blue",
-                    "tooltipParams": "item-data/CKnTmNIIEgcIBBX38E5dHRqWQGAd7O9hBzAJOPQDQABQCGCzBA"
-                },
-                "torso": {
-                    "name": "Adventuring Leather Doublet",
-                    "icon": "chestarmor_002",
-                    "displayColor": "blue",
-                    "tooltipParams": "item-data/CPfoqxwSBwgEFakZGWAdGpZAYDAJOMkEQABQBmCRBQ"
-                },
-                "feet": {
-                    "name": "Nimble Boots of the Hawk",
-                    "icon": "boots_002",
-                    "displayColor": "blue",
-                    "tooltipParams": "item-data/CKaQ0tENEgcIBBUYPZt_HQfqUAgd2nfX3DAJOPoDQABQCGC6BA"
-                },
-                "hands": {
-                    "name": "Scouting Leather Gloves",
-                    "icon": "gloves_002",
-                    "displayColor": "blue",
-                    "tooltipParams": "item-data/CJKcmN4JEgcIBBVBU5KkHaRgi4YwCTivA0AAUAZg5gM"
-                },
-                "shoulders": null,
-                "legs": {
-                    "name": "Cracked Cloth Pants",
-                    "icon": "pants_001",
-                    "displayColor": "grey",
-                    "tooltipParams": "item-data/CIDZ0foMEgcIBBUWitWlHT8G-w0wCTj5AkAAUABgqAM"
-                },
-                "bracers": {
-                    "name": "Thick Bracers",
-                    "icon": "bracers_001",
-                    "displayColor": "blue",
-                    "tooltipParams": "item-data/CJywidINEgcIBBVSJMrLHRv3WCowCTi7A0AAUARg9AM"
-                },
-                "mainHand": {
-                    "name": "Exceptional Javelin",
-                    "icon": "spear_001",
-                    "displayColor": "white",
-                    "tooltipParams": "item-data/CIfO1dkJEgcIBBULF_b5HbGUDkkwCTi0A0AAUARg6QM"
-                },
-                "offHand": {
-                    "name": "Broad Axe of the Snake",
-                    "icon": "axe_1h_002",
-                    "displayColor": "blue",
-                    "tooltipParams": "item-data/CJaPtP8BEgcIBBUnJAdjHc2I9w0wCTimBEAAUAZg6gQ"
-                },
-                "waist": {
-                    "name": "Gathering Hide Belt",
-                    "icon": "belt_002",
-                    "displayColor": "blue",
-                    "tooltipParams": "item-data/CKDkgvgPEgcIBBU4n0LUHYsm_qswCTjcA0AAUAZgmAQ"
-                },
-                "rightFinger": null,
-                "leftFinger": null,
-                "neck": null
-            },
-            "class": "monk",
-            "gender": 0,
-            "hardcore": true,
-            "stats": {
-                "damageIncrease": 0.40,
-                "damageReduction": 0.19,
-                "critChance": 0.05,
-                "life": 386,
-                "strength": 17,
-                "dexterity": 41,
-                "intelligence": 17,
-                "vitality": 31,
-                "armor": 122,
-                "coldResist": 0,
-                "fireResist": 0,
-                "lightningResist": 0,
-                "poisonResist": 0,
-                "arcaneResist": 0,
-                "damage": 14.4294
-            },
-            "kills": {
-                "monsters": 642,
-                "elites": 70
-            },
-            "death": {
-                "location": "TBD",
-                "killer": "TBD",
-                "time": 1339020240
-            }
-        }
-    ]
+    "heroes": [
+        {
+            "name": "Yharr",
+            "id": 1,
+            "level": 60,
+            "hardcore": false,
+            "gender": 0,
+            "lastUpdated": 1341343147,
+            "dead": false
+        },
+        {
+            "name": "Worm",
+            "id": 2,
+            "level": 19,
+            "hardcore": true,
+            "gender": 0,
+            "lastUpdated": 1339289897,
+            "dead": false
+        },
+        {
+            "name": "Korale",
+            "id": 3,
+            "level": 18,
+            "hardcore": false,
+            "gender": 0,
+            "lastUpdated": 1344055324,
+            "dead": false
+        }
+    ],
+    "lastHeroPlayed": 3,
+    "lastUpdated": 1344055324,
+    "artisans": [
+        {
+            "slug": "blacksmith",
+            "level": 9,
+            "stepMax": 5,
+            "stepMurrent": 1
+        },
+        {
+            "slug": "jeweler",
+            "level": 7,
+            "stepMax": 1,
+            "stepMurrent": 0
+        }
+    ],
+    "hardcoreArtisans": [
+        {
+            "slug": "blacksmith",
+            "level": 3,
+            "stepMax": 5,
+            "stepMurrent": 0
+        },
+        {
+            "slug": "jeweler",
+            "level": 0,
+            "stepMax": 1,
+            "stepMurrent": 0
+        }
+    ],
+    "kills": {
+        "monsters": 30509,
+        "elites": 1707,
+        "hardcoreMonsters": 3130
+    },
+    "timePlayed": {
+        "barbarian": 1,
+        "demon-hunter": 0.016,
+        "monk": 0.157,
+        "witch-doctor": 0.412,
+        "wizard": 0.414
+    },
+    "fallenHeroes": [
+        {
+            "stats": {
+                "life": 386,
+                "damage": 14.4294,
+                "armor": 122,
+                "strength": 17,
+                "dexterity": 41,
+                "vitality": 31,
+                "intelligence": 17,
+                "physicalResist": 0,
+                "fireResist": 0,
+                "coldResist": 0,
+                "lightningResist": 0,
+                "poisonResist": 0,
+                "arcaneResist": 0,
+                "damageIncrease": 0.41,
+                "critChance": 0.05,
+                "damageReduction": 0.196141
+            },
+            "kills": {
+                "elites": 70
+            },
+            "items": {
+                "head": {
+                    "name": "Adventuring Leather Hood of the Bear",
+                    "icon": "helm_002",
+                    "displayColor": "blue",
+                    "tooltipParams": "item-data/CKnTmNIIEgcIBBX38E5dHRqWQGAd7O9hBzAJOPQDQABQCGCzBA",
+                    "requiredLevel": 4
+                },
+                "torso": {
+                    "name": "Adventuring Leather Doublet",
+                    "icon": "chestarmor_002",
+                    "displayColor": "blue",
+                    "tooltipParams": "item-data/CPfoqxwSBwgEFakZGWAdGpZAYDAJOMkEQABQBmCRBQ",
+                    "requiredLevel": 3
+                },
+                "feet": {
+                    "name": "Nimble Boots of the Hawk",
+                    "icon": "boots_002",
+                    "displayColor": "blue",
+                    "tooltipParams": "item-data/CKaQ0tENEgcIBBUYPZt_HQfqUAgd2nfX3DAJOPoDQABQCGC6BA",
+                    "requiredLevel": 4
+                },
+                "hands": {
+                    "name": "Scouting Leather Gloves",
+                    "icon": "gloves_002",
+                    "displayColor": "blue",
+                    "tooltipParams": "item-data/CJKcmN4JEgcIBBVBU5KkHaRgi4YwCTivA0AAUAZg5gM",
+                    "requiredLevel": 3
+                },
+                "legs": {
+                    "name": "Cracked Cloth Pants",
+                    "icon": "pants_001",
+                    "displayColor": "gray",
+                    "tooltipParams": "item-data/CIDZ0foMEgcIBBUWitWlHT8G-w0wCTj5AkAAUABgqAM",
+                    "requiredLevel": 1
+                },
+                "bracers": {
+                    "name": "Thick Bracers",
+                    "icon": "bracers_001",
+                    "displayColor": "white",
+                    "tooltipParams": "item-data/CJywidINEgcIBBVSJMrLHRv3WCowCTi7A0AAUARg9AM",
+                    "requiredLevel": 1
+                },
+                "mainHand": {
+                    "name": "Exceptional Javelin",
+                    "icon": "spear_001",
+                    "displayColor": "white",
+                    "tooltipParams": "item-data/CIfO1dkJEgcIBBULF_b5HbGUDkkwCTi0A0AAUARg6QM",
+                    "requiredLevel": 1
+                },
+                "offHand": {
+                    "name": "Broad Axe of the Snake",
+                    "icon": "axe_1h_002",
+                    "displayColor": "blue",
+                    "tooltipParams": "item-data/CJaPtP8BEgcIBBUnJAdjHc2I9w0wCTimBEAAUAZg6gQ",
+                    "requiredLevel": 3
+                },
+                "waist": {
+                    "name": "Gathering Hide Belt",
+                    "icon": "belt_002",
+                    "displayColor": "blue",
+                    "tooltipParams": "item-data/CKDkgvgPEgcIBBU4n0LUHYsm_qswCTjcA0AAUAZgmAQ",
+                    "requiredLevel": 4
+                }
+            },
+            "death": {
+                "killer": 5395,
+                "location": 60394,
+                "time": 1339020240
+            },
+            "name": "Cook",
+            "level": 10,
+            "hardcore": true,
+            "heroId": 4,
+            "gender": 0
+        }
+    ],
+    "battleTag": "Straton#1",
+    "progression": {
+        "normal": {
+            "act1": {
+                "completed": true,
+                "completedQuests": [
+                    {
+                        "slug": "the-fallen-star",
+                        "name": "The Fallen Star"
+                    },
+                    {
+                        "slug": "the-legacy-of-cain",
+                        "name": "The Legacy of Cain"
+                    },
+                    {
+                        "slug": "a-shattered-crown",
+                        "name": "A Shattered Crown"
+                    },
+                    {
+                        "slug": "reign-of-the-black-king",
+                        "name": "Reign of the Black King"
+                    },
+                    {
+                        "slug": "sword-of-the-stranger",
+                        "name": "Sword of the Stranger"
+                    },
+                    {
+                        "slug": "the-broken-blade",
+                        "name": "The Broken Blade"
+                    },
+                    {
+                        "slug": "the-doom-in-wortham",
+                        "name": "The Doom in Wortham"
+                    },
+                    {
+                        "slug": "trailing-the-coven",
+                        "name": "Trailing the Coven"
+                    },
+                    {
+                        "slug": "the-imprisoned-angel",
+                        "name": "The Imprisoned Angel"
+                    },
+                    {
+                        "slug": "return-to-new-tristram",
+                        "name": "Return to New Tristram"
+                    }
+                ]
+            },
+            "act2": {
+                "completed": true,
+                "completedQuests": [
+                    {
+                        "slug": "shadows-in-the-desert",
+                        "name": "Shadows in the Desert"
+                    },
+                    {
+                        "slug": "the-road-to-alcarnus",
+                        "name": "The Road to Alcarnus"
+                    },
+                    {
+                        "slug": "city-of-blood",
+                        "name": "City of Blood"
+                    },
+                    {
+                        "slug": "a-royal-audience",
+                        "name": "A Royal Audience"
+                    },
+                    {
+                        "slug": "unexpected-allies",
+                        "name": "Unexpected Allies"
+                    },
+                    {
+                        "slug": "betrayer-of-the-horadrim",
+                        "name": "Betrayer of the Horadrim"
+                    },
+                    {
+                        "slug": "blood-and-sand",
+                        "name": "Blood and Sand"
+                    },
+                    {
+                        "slug": "the-black-soulstone",
+                        "name": "The Black Soulstone"
+                    },
+                    {
+                        "slug": "the-scouring-of-caldeum",
+                        "name": "The Scouring of Caldeum"
+                    },
+                    {
+                        "slug": "lord-of-lies",
+                        "name": "Lord of Lies"
+                    }
+                ]
+            },
+            "act3": {
+                "completed": true,
+                "completedQuests": [
+                    {
+                        "slug": "the-siege-of-bastions-keep",
+                        "name": "The Siege of Bastion's Keep"
+                    },
+                    {
+                        "slug": "turning-the-tide",
+                        "name": "Turning the Tide"
+                    },
+                    {
+                        "slug": "the-breached-keep",
+                        "name": "The Breached Keep"
+                    },
+                    {
+                        "slug": "tremors-in-the-stone",
+                        "name": "Tremors in the Stone"
+                    },
+                    {
+                        "slug": "machines-of-war",
+                        "name": "Machines of War"
+                    },
+                    {
+                        "slug": "siegebreaker",
+                        "name": "Siegebreaker"
+                    },
+                    {
+                        "slug": "heart-of-sin",
+                        "name": "Heart of Sin"
+                    }
+                ]
+            },
+            "act4": {
+                "completed": true,
+                "completedQuests": [
+                    {
+                        "slug": "fall-of-the-high-heavens",
+                        "name": "Fall of the High Heavens"
+                    },
+                    {
+                        "slug": "the-light-of-hope",
+                        "name": "The Light of Hope"
+                    },
+                    {
+                        "slug": "beneath-the-spire",
+                        "name": "Beneath the Spire"
+                    },
+                    {
+                        "slug": "prime-evil",
+                        "name": "Prime Evil"
+                    }
+                ]
+            }
+        },
+        "nightmare": {
+            "act1": {
+                "completed": true,
+                "completedQuests": [
+                    {
+                        "slug": "the-fallen-star",
+                        "name": "The Fallen Star"
+                    },
+                    {
+                        "slug": "the-legacy-of-cain",
+                        "name": "The Legacy of Cain"
+                    },
+                    {
+                        "slug": "a-shattered-crown",
+                        "name": "A Shattered Crown"
+                    },
+                    {
+                        "slug": "reign-of-the-black-king",
+                        "name": "Reign of the Black King"
+                    },
+                    {
+                        "slug": "sword-of-the-stranger",
+                        "name": "Sword of the Stranger"
+                    },
+                    {
+                        "slug": "the-broken-blade",
+                        "name": "The Broken Blade"
+                    },
+                    {
+                        "slug": "the-doom-in-wortham",
+                        "name": "The Doom in Wortham"
+                    },
+                    {
+                        "slug": "trailing-the-coven",
+                        "name": "Trailing the Coven"
+                    },
+                    {
+                        "slug": "the-imprisoned-angel",
+                        "name": "The Imprisoned Angel"
+                    },
+                    {
+                        "slug": "return-to-new-tristram",
+                        "name": "Return to New Tristram"
+                    }
+                ]
+            },
+            "act2": {
+                "completed": true,
+                "completedQuests": [
+                    {
+                        "slug": "shadows-in-the-desert",
+                        "name": "Shadows in the Desert"
+                    },
+                    {
+                        "slug": "the-road-to-alcarnus",
+                        "name": "The Road to Alcarnus"
+                    },
+                    {
+                        "slug": "city-of-blood",
+                        "name": "City of Blood"
+                    },
+                    {
+                        "slug": "a-royal-audience",
+                        "name": "A Royal Audience"
+                    },
+                    {
+                        "slug": "unexpected-allies",
+                        "name": "Unexpected Allies"
+                    },
+                    {
+                        "slug": "blood-and-sand",
+                        "name": "Blood and Sand"
+                    },
+                    {
+                        "slug": "the-black-soulstone",
+                        "name": "The Black Soulstone"
+                    },
+                    {
+                        "slug": "the-scouring-of-caldeum",
+                        "name": "The Scouring of Caldeum"
+                    },
+                    {
+                        "slug": "lord-of-lies",
+                        "name": "Lord of Lies"
+                    }
+                ]
+            },
+            "act3": {
+                "completed": true,
+                "completedQuests": [
+                    {
+                        "slug": "the-siege-of-bastions-keep",
+                        "name": "The Siege of Bastion's Keep"
+                    },
+                    {
+                        "slug": "turning-the-tide",
+                        "name": "Turning the Tide"
+                    },
+                    {
+                        "slug": "the-breached-keep",
+                        "name": "The Breached Keep"
+                    },
+                    {
+                        "slug": "tremors-in-the-stone",
+                        "name": "Tremors in the Stone"
+                    },
+                    {
+                        "slug": "heart-of-sin",
+                        "name": "Heart of Sin"
+                    }
+                ]
+            },
+            "act4": {
+                "completed": true,
+                "completedQuests": [
+                    {
+                        "slug": "fall-of-the-high-heavens",
+                        "name": "Fall of the High Heavens"
+                    },
+                    {
+                        "slug": "the-light-of-hope",
+                        "name": "The Light of Hope"
+                    },
+                    {
+                        "slug": "beneath-the-spire",
+                        "name": "Beneath the Spire"
+                    },
+                    {
+                        "slug": "prime-evil",
+                        "name": "Prime Evil"
+                    }
+                ]
+            }
+        },
+        "hell": {
+            "act1": {
+                "completed": true,
+                "completedQuests": [
+                    {
+                        "slug": "the-fallen-star",
+                        "name": "The Fallen Star"
+                    },
+                    {
+                        "slug": "the-legacy-of-cain",
+                        "name": "The Legacy of Cain"
+                    },
+                    {
+                        "slug": "a-shattered-crown",
+                        "name": "A Shattered Crown"
+                    },
+                    {
+                        "slug": "reign-of-the-black-king",
+                        "name": "Reign of the Black King"
+                    },
+                    {
+                        "slug": "sword-of-the-stranger",
+                        "name": "Sword of the Stranger"
+                    },
+                    {
+                        "slug": "the-broken-blade",
+                        "name": "The Broken Blade"
+                    },
+                    {
+                        "slug": "the-doom-in-wortham",
+                        "name": "The Doom in Wortham"
+                    },
+                    {
+                        "slug": "trailing-the-coven",
+                        "name": "Trailing the Coven"
+                    },
+                    {
+                        "slug": "the-imprisoned-angel",
+                        "name": "The Imprisoned Angel"
+                    },
+                    {
+                        "slug": "return-to-new-tristram",
+                        "name": "Return to New Tristram"
+                    }
+                ]
+            },
+            "act2": {
+                "completed": true,
+                "completedQuests": [
+                    {
+                        "slug": "shadows-in-the-desert",
+                        "name": "Shadows in the Desert"
+                    },
+                    {
+                        "slug": "the-road-to-alcarnus",
+                        "name": "The Road to Alcarnus"
+                    },
+                    {
+                        "slug": "city-of-blood",
+                        "name": "City of Blood"
+                    },
+                    {
+                        "slug": "a-royal-audience",
+                        "name": "A Royal Audience"
+                    },
+                    {
+                        "slug": "unexpected-allies",
+                        "name": "Unexpected Allies"
+                    },
+                    {
+                        "slug": "betrayer-of-the-horadrim",
+                        "name": "Betrayer of the Horadrim"
+                    },
+                    {
+                        "slug": "blood-and-sand",
+                        "name": "Blood and Sand"
+                    },
+                    {
+                        "slug": "the-black-soulstone",
+                        "name": "The Black Soulstone"
+                    },
+                    {
+                        "slug": "the-scouring-of-caldeum",
+                        "name": "The Scouring of Caldeum"
+                    },
+                    {
+                        "slug": "lord-of-lies",
+                        "name": "Lord of Lies"
+                    }
+                ]
+            },
+            "act3": {
+                "completed": true,
+                "completedQuests": [
+                    {
+                        "slug": "the-siege-of-bastions-keep",
+                        "name": "The Siege of Bastion's Keep"
+                    },
+                    {
+                        "slug": "the-breached-keep",
+                        "name": "The Breached Keep"
+                    },
+                    {
+                        "slug": "tremors-in-the-stone",
+                        "name": "Tremors in the Stone"
+                    },
+                    {
+                        "slug": "machines-of-war",
+                        "name": "Machines of War"
+                    },
+                    {
+                        "slug": "siegebreaker",
+                        "name": "Siegebreaker"
+                    },
+                    {
+                        "slug": "heart-of-sin",
+                        "name": "Heart of Sin"
+                    }
+                ]
+            },
+            "act4": {
+                "completed": true,
+                "completedQuests": [
+                    {
+                        "slug": "fall-of-the-high-heavens",
+                        "name": "Fall of the High Heavens"
+                    },
+                    {
+                        "slug": "the-light-of-hope",
+                        "name": "The Light of Hope"
+                    },
+                    {
+                        "slug": "beneath-the-spire",
+                        "name": "Beneath the Spire"
+                    },
+                    {
+                        "slug": "prime-evil",
+                        "name": "Prime Evil"
+                    }
+                ]
+            }
+        },
+        "inferno": {
+            "act1": {
+                "completed": false,
+                "completedQuests": [
+                    {
+                        "slug": "the-fallen-star",
+                        "name": "The Fallen Star"
+                    },
+                    {
+                        "slug": "the-legacy-of-cain",
+                        "name": "The Legacy of Cain"
+                    },
+                    {
+                        "slug": "a-shattered-crown",
+                        "name": "A Shattered Crown"
+                    },
+                    {
+                        "slug": "reign-of-the-black-king",
+                        "name": "Reign of the Black King"
+                    }
+                ]
+            },
+            "act2": {
+                "completed": false,
+                "completedQuests": []
+            },
+            "act3": {
+                "completed": false,
+                "completedQuests": []
+            },
+            "act4": {
+                "completed": false,
+                "completedQuests": []
+            }
+        }
+    },
+    "hardcoreProgression": {
+        "normal": {
+            "act1": {
+                "completed": true,
+                "completedQuests": [
+                    {
+                        "slug": "the-fallen-star",
+                        "name": "The Fallen Star"
+                    },
+                    {
+                        "slug": "the-legacy-of-cain",
+                        "name": "The Legacy of Cain"
+                    },
+                    {
+                        "slug": "a-shattered-crown",
+                        "name": "A Shattered Crown"
+                    },
+                    {
+                        "slug": "reign-of-the-black-king",
+                        "name": "Reign of the Black King"
+                    },
+                    {
+                        "slug": "sword-of-the-stranger",
+                        "name": "Sword of the Stranger"
+                    },
+                    {
+                        "slug": "the-broken-blade",
+                        "name": "The Broken Blade"
+                    },
+                    {
+                        "slug": "the-doom-in-wortham",
+                        "name": "The Doom in Wortham"
+                    },
+                    {
+                        "slug": "trailing-the-coven",
+                        "name": "Trailing the Coven"
+                    },
+                    {
+                        "slug": "the-imprisoned-angel",
+                        "name": "The Imprisoned Angel"
+                    },
+                    {
+                        "slug": "return-to-new-tristram",
+                        "name": "Return to New Tristram"
+                    }
+                ]
+            },
+            "act2": {
+                "completed": false,
+                "completedQuests": [
+                    {
+                        "slug": "shadows-in-the-desert",
+                        "name": "Shadows in the Desert"
+                    },
+                    {
+                        "slug": "the-road-to-alcarnus",
+                        "name": "The Road to Alcarnus"
+                    },
+                    {
+                        "slug": "city-of-blood",
+                        "name": "City of Blood"
+                    },
+                    {
+                        "slug": "a-royal-audience",
+                        "name": "A Royal Audience"
+                    },
+                    {
+                        "slug": "unexpected-allies",
+                        "name": "Unexpected Allies"
+                    }
+                ]
+            },
+            "act3": {
+                "completed": false,
+                "completedQuests": []
+            },
+            "act4": {
+                "completed": false,
+                "completedQuests": []
+            }
+        },
+        "nightmare": {
+            "act1": {
+                "completed": false,
+                "completedQuests": []
+            },
+            "act2": {
+                "completed": false,
+                "completedQuests": []
+            },
+            "act3": {
+                "completed": false,
+                "completedQuests": []
+            },
+            "act4": {
+                "completed": false,
+                "completedQuests": []
+            }
+        },
+        "hell": {
+            "act1": {
+                "completed": false,
+                "completedQuests": []
+            },
+            "act2": {
+                "completed": false,
+                "completedQuests": []
+            },
+            "act3": {
+                "completed": false,
+                "completedQuests": []
+            },
+            "act4": {
+                "completed": false,
+                "completedQuests": []
+            }
+        },
+        "inferno": {
+            "act1": {
+                "completed": false,
+                "completedQuests": []
+            },
+            "act2": {
+                "completed": false,
+                "completedQuests": []
+            },
+            "act3": {
+                "completed": false,
+                "completedQuests": []
+            },
+            "act4": {
+                "completed": false,
+                "completedQuests": []
+            }
+        }
+    }
 }
 ```
 
