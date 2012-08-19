@@ -2456,7 +2456,7 @@ Access detailed artison information through the Artisan API. Use it to fetch a s
 
 ```plain
 artisan ::= "blacksmith" | "jeweler"
-url ::= <host> "/api/d3/data/artisan/" < follower-type>
+url ::= <host> "/api/d3/data/artisan/" < artisan-type>
 ```
 
 Query string parameters are optional when accessing this resource.
