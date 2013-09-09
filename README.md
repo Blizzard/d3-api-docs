@@ -2303,7 +2303,7 @@ HTTP/1.1 200 OK
 
 ```
 
-The data associated with an item object varies between items, but in most cases you can retreive the name, icon, display color, required level, item level, bonus affixes, attributes and salvage information.
+The data associated with an item object varies between items, but in most cases you can retrieve the name, icon, display color, required level, item level, bonus affixes, attributes and salvage information.
 
 ### Item Information Example
 
@@ -2452,7 +2452,7 @@ Refer to the `follower_scoundrel.json` file for a detailed Follower API resource
 
 ## Artisan Information
 
-Access detailed artison information through the Artisan API. Use it to fetch a single artisan at a time through an HTTP GET request to a URL describing the artisan resource.
+Access detailed artisan information through the Artisan API. Use it to fetch a single artisan at a time through an HTTP GET request to a URL describing the artisan resource.
 
 ```plain
 artisan ::= "blacksmith" | "jeweler"
