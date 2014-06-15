@@ -835,7 +835,7 @@ GET /api/d3/profile/Straton-1/hero/1
 Host: us.battle.net
 ```
 
-*Career Profile API Response Example:*
+*Sample Hero Profile API Response Example:*
 ```plain
 HTTP/1.1 200 OK
 <http headers>
@@ -2294,7 +2294,7 @@ GET /api/d3/data/item/COGHsoAIEgcIBBXIGEoRHYQRdRUdnWyzFB2qXu51MA04kwNAAFAKYJMD
 Host: us.battle.net
 ```
 
-*Career Profile API Response:*
+*Sample Item API Response Example:*
 ```plain
 HTTP/1.1 200 OK
 <http headers>
