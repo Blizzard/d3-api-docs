@@ -50,7 +50,7 @@ The returned core dataset includes a list of the account's heroes and artisans, 
             "level": 60,
             "hardcore": false,
             "gender": 0,
-            "lastUpdated": 1341343147,
+            "last-updated": 1341343147,
             "dead": false
         },
         {
@@ -59,7 +59,7 @@ The returned core dataset includes a list of the account's heroes and artisans, 
             "level": 19,
             "hardcore": true,
             "gender": 0,
-            "lastUpdated": 1339289897,
+            "last-updated": 1339289897,
             "dead": false
         },
         {
@@ -68,7 +68,7 @@ The returned core dataset includes a list of the account's heroes and artisans, 
             "level": 18,
             "hardcore": false,
             "gender": 0,
-            "lastUpdated": 1344055324,
+            "last-updated": 1344055324,
             "dead": false
         }
     ],
