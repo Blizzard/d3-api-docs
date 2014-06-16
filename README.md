@@ -79,13 +79,13 @@ The returned core dataset includes a list of the account's heroes and artisans, 
             "slug": "blacksmith",
             "level": 9,
             "stepMax": 5,
-            "stepMurrent": 1
+            "stepCurrent": 1
         },
         {
             "slug": "jeweler",
             "level": 7,
             "stepMax": 1,
-            "stepMurrent": 0
+            "stepCurrent": 0
         }
     ],
     "hardcoreArtisans": [
@@ -93,13 +93,13 @@ The returned core dataset includes a list of the account's heroes and artisans, 
             "slug": "blacksmith",
             "level": 3,
             "stepMax": 5,
-            "stepMurrent": 0
+            "stepCurrent": 0
         },
         {
             "slug": "jeweler",
             "level": 0,
             "stepMax": 1,
-            "stepMurrent": 0
+            "stepCurrent": 0
         }
     ],
     "kills": {
